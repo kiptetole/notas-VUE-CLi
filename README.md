@@ -2,6 +2,7 @@
 proyecto de notas con VUE CLI con local storage.
 
 ## Proyecto en Produccion
+ - Proyecto en produccion: https://tender-euler-6b1900.netlify.com
 
 ## Project setup
 ```
