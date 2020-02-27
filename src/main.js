@@ -11,6 +11,7 @@ import tokyo2020 from './components/tokyo2020.vue'
 const routes = [
   { path: '/listanotas', component: lista },
   { path: '/tokyo2020', component: tokyo2020 },
+  { path: '*', component: tokyo2020 },
 ]
 
 const router = new VueRouter({

@@ -3,7 +3,6 @@
   <div class="conatiner-fluid">
     <div class="row">
       <div class="col-1">
-        
       </div>
       <div class="col-10 d-flex justify-content-start">
         <p class="d-inline display-4 ">{{msg}}</p>
