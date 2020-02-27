@@ -1,4 +1,7 @@
-# notas
+# Notas
+proyecto de notas con VUE CLI con local storage.
+
+## Proyecto en Produccion
 
 ## Project setup
 ```

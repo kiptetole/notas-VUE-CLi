@@ -1,10 +1,15 @@
 <template lang="html">
-
   <div>
-    <input v-model="nota.msg" @keyup.enter="indexar">
-    <button @click="indexar">Añadir</button>
+    <br/>
+    <div class="form-row justify-content-center">
+      <div class="col-5">
+        <input class="form-control" v-model="msg" @keyup.enter="indexar" placeholder="¿Que quieres recordar?">
+      </div>
+      <div class="col-4 d-flex justify-content-start">
+        <button class="btn btn-success" @click="indexar">Añadir Nota</button>
+      </div>
+    </div>
   </div>
-
 </template>
 
 <script lang="js">
@@ -17,17 +22,13 @@
     },
     data () {
       return {
-        nota: {
-          msg: "", 
-          prioridad: 0,
-          fecha: new Date()
-        }
+        msg: ""
       }
     },
     methods: {
       indexar:function() {
-        this.$emit("anadirnota", this.nota)
-
+        this.$emit("anadirnota", this.msg, 0, new Date())
+        this.msg = "";
       }
     },
     computed: {
