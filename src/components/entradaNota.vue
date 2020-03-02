@@ -27,7 +27,7 @@
     },
     methods: {
       indexar:function() {
-        this.$emit("anadirnota", this.msg, 0, new Date())
+        this.$emit("anadirnota", this.msg, 0, new Date().toLocaleString());
         this.msg = "";
       }
     },
