@@ -93,6 +93,7 @@ import entradaNota from './entradaNota';
             this.todo.splice( i, 1 );
           }
         }
+        this.guardarInformacion()
       },
       cambiaPrioridad: function (fecha,prioridad) {
         var nota = 0
